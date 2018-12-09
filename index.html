@@ -5,16 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Grand Hostal Playa del Carmen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </head>
-<body>
+ <body>
 
-    <h1>Haciendo pruebas para now</h1>
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One -->
+        <div class="carousel-item active" style="background-image: url('https://static.wixstatic.com/media/9f7406_6fdd20489c74415e94b2a2d2b73faba9~mv2.jpg/v1/fill/w_901,h_447,al_c,q_85/9f7406_6fdd20489c74415e94b2a2d2b73faba9~mv2.webp')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Grand Hostal Playa del Carmen</h3>
+            <p>Vive feliz, Vive viajando</p>
+          </div>
+        </div>
+        <!-- Slide Two -->
+        <div class="carousel-item" style="background-image: url('https://static.wixstatic.com/media/9f7406_6dc277a583374af0a70f81a2e61c6b5b~mv2.jpg/v1/fill/w_901,h_447,al_c,q_85/9f7406_6dc277a583374af0a70f81a2e61c6b5b~mv2.webp')">
+        </div>
+        <!-- Slide Three -->
+        <div class="carousel-item" style="background-image: url('https://static.wixstatic.com/media/caa4654a920345f38290b3e62eb73897.jpg/v1/fill/w_980,h_486,al_c,q_85,usm_0.66_1.00_0.01/caa4654a920345f38290b3e62eb73897.webp')">
+        </div>
+        <!-- Slide Four -->
+        <div class="carousel-item" style="background-image: url('https://static.wixstatic.com/media/9f7406_7e9fbb4a0bc341f9ada128588d0f75ed~mv2.jpg/v1/fill/w_901,h_447,al_c,q_85/9f7406_7e9fbb4a0bc341f9ada128588d0f75ed~mv2.webp')">
+        </div>
+        <!-- Slide Five -->
+        <div class="carousel-item" style="background-image: url('https://static.wixstatic.com/media/9f7406_0f8af7ab7f794b25a168087951abffab~mv2.jpg/v1/fill/w_901,h_447,al_c,q_85/9f7406_0f8af7ab7f794b25a168087951abffab~mv2.webp')">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <nav class="nav-mobile-fix">
+        <img src="" alt="">
+        <div class="container-nav">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu"><span id="menu-icon"></span></label>
+            <div id="overlay"></div>
+            <ul>
+                <li><a class="nav-mobile" href="#">Servicios</a></li>
+                <li><a class="nav-mobile" href="#">Tarifas</a></li>
+                <li><a class="nav-mobile" href="#">Galería</a></li>
+                <li><a class="nav-mobile" href="#">Contacto</a></li>
+                <li><a class="nav-mobile" href="#">Reserva ya!</a></li>
+            </ul>
+            <ul id="social-media">
+                <li>
+                    <a href="https://dribbble.com/erinesullivan">
+                        Hola
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <div class="container">
+        <div class="row">
+            <div class="col text-center title-page">
+                <h1>GRAND HOSTAL PLAYA</h1>
+                <H3>SIGNIFICA</H3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="https://static.wixstatic.com/media/9f7406_60630f6d544e4b3f82a9fbd3c7525190~mv2.jpg/v1/fill/w_334,h_197,al_c,q_80/ghp03.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
 </body>
 </html>
