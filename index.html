@@ -10,7 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
  <body>
 
@@ -53,11 +54,14 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!--Menu responsive-->
     <nav class="nav-mobile-fix">
-        <img src="" alt="">
         <div class="container-nav">
             <input id="responsive-menu" type="checkbox">
-            <label for="responsive-menu"><span id="menu-icon"></span></label>
+            <label for="responsive-menu">
+                <img src="https://static.wixstatic.com/media/9f7406_c6edb4b3923e4a109d17fb8503a8051e~mv2.png/v1/fill/w_118,h_63,al_c,q_80,usm_0.66_1.00_0.01/logoGHP.webp" alt="GrandHostalPlaya">
+                <span id="menu-icon"></span>
+            </label>
             <div id="overlay"></div>
             <ul>
                 <li><a class="nav-mobile" href="#">Servicios</a></li>
@@ -67,35 +71,174 @@
                 <li><a class="nav-mobile" href="#">Reserva ya!</a></li>
             </ul>
             <ul id="social-media">
-                <li>
-                    <a href="https://dribbble.com/erinesullivan">
-                        Hola
-                    </a>
+                <li class="contacts">
+                    <a class="text-white" href="tel:+529841470363"><i class="fas fa-phone"></i></a> 
+                    <a class="text-white" href="mailto:grandhostalplaya@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a class="text-white" href="https://goo.gl/maps/EYZCTsBYg4C2" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> <!--Fin de menu responsive-->
   </header>
   <div class="container">
-        <div class="row">
+        <div class="row main-title">
             <div class="col text-center title-page">
                 <h1>GRAND HOSTAL PLAYA</h1>
                 <H3>SIGNIFICA</H3>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="https://static.wixstatic.com/media/9f7406_60630f6d544e4b3f82a9fbd3c7525190~mv2.jpg/v1/fill/w_334,h_197,al_c,q_80/ghp03.webp" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-sm-12">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="https://static.wixstatic.com/media/9f7406_60630f6d544e4b3f82a9fbd3c7525190~mv2.jpg/v1/fill/w_334,h_197,al_c,q_80/ghp03.webp" alt="Card image">
+                    <div class="card-img-overlay">
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn toggle-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <i class="far fa-plus-square"></i>
+                            </button>
+                            <h2 class="card-title">SERVICIO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">SERVICIO</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="text-white" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="align-center">
+                                Damos el mejor trato personalizado, dando orientación al turista de la foma más atenta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card2-->
+            <div class="col-sm-12">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="https://static.wixstatic.com/media/9f7406_70dbd48754dc46ef8596f1258bc75eac~mv2.jpg/v1/fill/w_468,h_263,al_c,lg_1,q_80/y.webp" alt="Card image">
+                        <div class="card-img-overlay">
+                            <div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn toggle-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <i class="far fa-plus-square"></i>
+                                </button>
+                                <h2 class="card-title">CALIDAD</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">CALIDAD</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="text-white" aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="align-center">
+                                    Nuestra calidad nos distingue, por ello mantenemos los más altos estandares de calidad, para que tu estancia sea la mejor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--card3-->
+        <div class="col-sm-12">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="https://static.wixstatic.com/media/9f7406_c29324e688b54f1a8fe5375d978cb645~mv2.jpg/v1/crop/x_0,y_2,w_334,h_193/fill/w_324,h_187,al_c,q_80,usm_0.66_1.00_0.01/ghp2.webp" alt="Card image">
+                <div class="card-img-overlay">
+                    <div>
+                    <!-- Button trigger modal -->
+                        <button type="button" class="btn toggle-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                            <i class="far fa-plus-square"></i>
+                        </button>
+                        <h2 class="card-title">PRECIO</h2>
                     </div>
                 </div>
             </div>
         </div>
-  </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">PRECIO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="text-white" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="align-center">
+                            Contamos con los mejores precios del mercado. La relación calidad-precio es la mejor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 text-white">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row padding-top">
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-4 mt-md-0 mt-3 text-center">
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Siguenos en nuestras redes sociales</h5>
+                    <a href="https://www.facebook.com/grandhostalplaya/" target="_blank"><i class="fab fa-facebook social"></i></a>
+                    <a href="https://plus.google.com/u/0/+GrandHostalPlaya" target="_blank"><i class="fab fa-google-plus-g social"></i></a> 
+                    <a href="www.youtube.com" target="_blank"></a> <i class="fab fa-youtube social"></i>
+                    <a href="https://www.instagram.com/_grandhostalplaya_/" target="_blank"><i class="fab fa-instagram social"></i></a> 
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-4 mb-md-0 mb-3 text-center align-center">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Dirección</h5>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.059554381928!2d-87.07860578542696!3d20.626429206767735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e433b697e0c01%3A0x56f625b5d815a946!2sGrand+Hostal+Playa!5e0!3m2!1ses!2smx!4v1544380725738" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <p>
+                                Avenida 20 entre 4Norte y 6Norte
+                                colonia Centro,
+                                Playa del Carmen 
+                                Quintana Roo, México
+                        </p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-md-0 mb-3 text-center">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contacto</h5>
+                    <p>
+                        <a class="text-white" href="tel:+529841470363">TEL: 984 147 03 63</a> 
+                        <a class="text-white" href="mailto:grandhostalplaya@gmail.com">Grandhostalplaya@gmail.com</a> 
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a class="text-white" href="https://www.grandhostalplaya.com/"> Grand Hostal Playa del Carmen</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
 </body>
 </html>

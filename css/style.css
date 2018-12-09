@@ -1,3 +1,52 @@
+.row, [class*="col-"]{
+    margin-bottom: 2em;
+}
+
+h1{
+    font-size: 3em;
+    color: #207EA9;
+}
+h3{
+    font-size: 2em;
+    color: rgb(18, 182, 211);
+    font-weight: lighter; 
+}
+
+.main-title{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/*botones*/
+.toggle-btn{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+/*Card*/
+.card{
+    border: none;
+}
+/*Footer*/
+footer{
+    background-color: #207EA9 !important;
+}
+.padding-top{
+    padding-top: 2em;
+}
+.social{
+    margin-left: .2em !important;
+    margin-right: .2em !important;
+    font-size: 3em !important;
+    color: white;
+}
+.social:hover{
+    color: #207EA9;
+}
+
+/*Slider*/
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -78,7 +127,7 @@ nav label {
 
 #menu-icon {
     display: inline-block;
-    margin: 0.4em 0;
+    margin: .8em 0;
     max-width: 1em;
     position: relative;
 }
@@ -167,6 +216,12 @@ nav ul a:hover {
 nav ul#social-media > li {
     display: inline-block;
     font-size: 1.5em;
-    margin: 0.5em;
+    margin: 1em;
+}
+
+.contacts>a{
+    font-size: 1.5em;
+    margin-left: .2em;
+    margin-right: .2em;
 }
   /*Nav movil*/
