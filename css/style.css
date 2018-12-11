@@ -90,7 +90,7 @@ footer{
 /************************************************/
 /****************** NAVIGATION ******************/
 /************************************************/
-nav, .nav {
+nav {
     color: white;
     left: 0;
     position: relative;
@@ -225,56 +225,3 @@ nav ul#social-media > li {
     margin-right: .2em;
 }
   /*Nav movil*/
-
-/*Nav desktop*/
-header{
-    position: relative;
-}
-
-.nav-desktop{
-    position: fixed;
-}
-
-ul.nav-desktop li a{
-    color: #207EA9;
-    font-weight: bold;
-}
-
-ul.nav-desktop li a:hover{
-    color: skyblue;
-}
-
-.bg-light{
-    padding: 1% 0;
-}
-img.logo{
-    margin-right: 49%;
-}
-@media (min-width: 240px) {
-    .nav-mobile-fix{
-        display: inline;
-    }
-    .ocultar{
-        display: inline;
-    }
-    .mostrar{
-        display: none;
-    }
-    .nav-desktop{
-        display: none;
-    }
-}
-@media (min-width: 940px) {
-      .nav-mobile-fix{
-        display: none;
-      }
-      .ocultar{
-        display: none;
-      }
-      .mostrar{
-        display: inline;
-      }
-      .nav-desktop{
-        display: inline-flex;
-      }
-  }
